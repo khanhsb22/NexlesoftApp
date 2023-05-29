@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/dimen3dp"
+    android:layout_height="wrap_content">
+
+    <ToggleButton
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/select_unselect_category_item"
+        android:textOn=""
+        android:textAllCaps="false"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/white"
+        android:textOff=""
+        android:textSize="@dimen/dimen12sp"
+        android:checked="false"
+        android:id="@+id/toggleItemCategory"
+        android:layout_width="@dimen/dimen100dp"
+        android:layout_height="@dimen/dimen65dp"/>
+
+</LinearLayout>

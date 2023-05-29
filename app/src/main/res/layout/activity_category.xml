@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.CategoryActivity">
+
+    <ImageView
+        android:foreground="#211D2238"
+        android:foregroundTintMode="src_atop"
+        android:id="@+id/imvBackground"
+        android:src="@drawable/category_background"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen180dp"
+            android:background="@drawable/category_transparent_gradient"
+            android:paddingLeft="@dimen/dimen20dp"
+            android:paddingRight="@dimen/dimen20dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:fontFamily="@font/lato_regular"
+                android:textSize="@dimen/dimen20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Wellcome to Flutter Test"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dimen11dp"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="@dimen/dimen13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D2D2D2"
+                android:text="Please select categories what you would like to see on your feed. You can set this later on Filter."/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginBottom="@dimen/dimen50dp"
+                tools:listitem="@layout/item_category"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imvBack"
+        android:layout_marginLeft="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen50dp"
+        android:src="@drawable/ic_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tvDone"
+        android:layout_marginRight="@dimen/dimen20dp"
+        android:layout_marginTop="@dimen/dimen50dp"
+        android:layout_gravity="right"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/dimen13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Done"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pbLoading"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

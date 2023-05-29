@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NexlesoftApp</string>
+    <string name="email_hint"><font size="11">Your email</font></string>
+    <string name="pass_hint"><font size="11">Your password</font></string>
+
+</resources>
