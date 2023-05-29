@@ -16,7 +16,6 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
     private var iToggleCategory: IToggleCategory? = null
     private var count = 0
-    private var lastCheckedPosition = -1
 
     fun setIToggleCategory(iToggleCategory: IToggleCategory) {
         this.iToggleCategory = iToggleCategory
@@ -44,8 +43,6 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
         holder.toggleItemCategory.text = model.name
         holder.toggleItemCategory.textOff = model.name
-
-        //holder.toggleItemCategory.isChecked = lastCheckedPosition == index
 
         holder.toggleItemCategory.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
