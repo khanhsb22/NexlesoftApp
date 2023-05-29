@@ -1,6 +1,7 @@
 # NexlesoftApp
-# My code in branch "master"
-# Screenshot:
+
+- My code in branch "master"
+- Screenshot:
 
 ![app1](https://github.com/khanhsb22/NexlesoftApp/assets/59760653/5b66930f-6e93-42e5-80e3-3dd782bd5e6f)
 ![app2](https://github.com/khanhsb22/NexlesoftApp/assets/59760653/30bc80c6-5709-464a-85a8-eb1c0f780d81)
